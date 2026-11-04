@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Generador de fichas técnicas</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAAYFBMVEX///////7+/////v79/f79+/v19vju6O3IxNKhlK3lYWdOcqAsV44gTYgFOHoDNngCNngBNngBNXh5NFcANHfXEhzWChPWCBPWCBLWCBHWBhDUAQl3FTQAL3MALHIAKG/ibOQSAAAKh0lEQVR42u2cDXOqOBSGWRJIEAQug6ziAP//X+5JQCUfgF6pdmfeZ+5s20hp8zTJOTnEDQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D+j9pMfszSRki7gbHY1p39CSsn0p0/Cgvh0bc42rQjmt6YbHtyrmuvBvOpTAuqu64c+TxMx7yoP4iQ75mSH2vl7AlTXIuOq6PSbBFRVmZck4ZjE967yQGZD35EdapdPG1gUEHHjKtk6o+SLAkYLRdkN2a2r1P/jkJcVURRd97SBBQHtScyHQOSbAd8WoBzkfTF1NeTZkN/ai/4oQv7OGmDOAcYWL/quAOpqV2sDNAD6crZMDknwtoD5AJDX5t9fKaAuu1wwTr1NHwOAWvv0rSlwPl+aWRxg3hnwOwTQHztV0TDO+mI2N7o8DsJ3BJhzIDr9XgFVnatJQAJKw4t47ndbERAxdp8BzWUvAczkfQHTfN9dgJoD0VoM+C0jgFaBjFMQSIddp8BsDrCFGfBXAiJhwl4SQCG+KCp3DKi/lSGg6FP23iI46x1TMeC8iwAWiJNJtHoHJwUeBkr2XAVSTdNq1lwM8r0wOOVCbG0G/J2A5to+uL4oIE/TNDsO9rjoaBHQcbC6LwsZD8P3BNznwOIM+MsRcG4etC8JoOCuGkWS18YYKHolgMXZQNlxWZVFORxF8GYe8IgDNLgu5/N+AmbxpLm+KoBHnP6wyXy6q/GuwgDdOy2Gnhi61Ok/45y9KOCWC/GlGeAK2Axsbwugq8OIC3MIjALUP5mkmSoVhEb/Q87nH+nDnGUB4xxQM6B9RsC97+NHFs3DfcT0BRFzBOjrXhFAfRPHrrSnwLJF/ZKQUqjPPQvDqgAaWcy3E3YEMLVcxEIKcVfgxRbwSh5wE2CPgFrvh7hMZsh41n+ZHvOpUKL0JcaFKwJ0HFiMAYYA+iAOU2Q7COVDGhwkjX6FkVOSAN0YL80Ddw0gaFEaSjMXVnM1Og53+iEXt10ydb8burFQkieUHslhfmG6LGCaA+uv31IF6v71qiIc/fd0iFTkMKDJfmiUHnNB1U2NNMpPW1FAzYDKbiYBWZcXE3l9CwM8SOqhLCpNUQ+ZCGRePC7stwTwpSxoLoBSpdO1fQS3Kw0CGjcztIDrmQTZxUdquT4tIKMhlKS50f9xLxAqAdUjO54EUP+HKp8VUIYsFrPvL9ZHgJoDyzPgLkD3v5mNbBVBjW+bBCgV9j2UnScF6GooDeTuj7kVOMaM+QWo/heWrTSeLaHrAlQPWXTaEqBim3UNveIVsHCb5wXQOC7NHlVj1usVQMPXyZspbZztG7cFLOyEZwL89bKLMdl3E+BuBStVDwm8Aug3s/bI45KZz1OIdQE0B5ZnwCRgoWft+SMCBtoHqGnoE8DtlHEyUD8twBnKHgFqAvgSpeYjAopUjlmHdwpY4cJjYEsAjeTl10YBfGWV/GkBuho2xXtXQOQdAJbALQHn9rwuIFoYAB8RoMikTsO8U8BdAV4X0GwKeGIA/KSAvkvVhoW2P7YAynjqanUFeEbAeUMAY26/muaDAlQYiDnzCUjmTwrGPIgSgWpfAYFoLk7/L7aCScDJSYRUHnRqnxaga4JlZfVKBUKPALNMqv/6A4WN1xbBbQF2pkyJXdtcncRIC1BYcVa3HZ4V0OkNjPVXnOrijgA7BlRdnkqZGIn0DgKsgd207YE2f3arEkCtRGPmGbpNPLcbvNUE88EoB+juMleAdPqvjlSolWHXNcCe2Rf9U2KzWQvYpR6gaxuUzP6xZ7JHQF+Z300zTW2m58HxfQHWd+vAQFjBcax9+SpCsbqavVITZOOG2KgI6LBvC0h665qYO+WU9wXYWcBFMuY+Tr0V/3apCTJVEukLcxIkQbwugJZKpirlofEY1Segvfy9gPvDBCs67ilAH42yFjgVCLYF3Eok2bAigLpwujyZFnkFxMEPj4DAVxYd0pBvjwAWanvrAq6nldSubX7HCOAit6piWcTWF8Gqz+JQrQHhfPR4Bcil5P7SmK8srAHRj46AkDG9z82tYlnMtsKgigKMx0pMtToFFksA9uAYBbhRgFZ7bxTYQQAb6/8y7+pNAaKr7Gt0hJ5vkbwCouWHwdLtreWkPek8IPLkAbuMgCAWQtplUfU0nG9ngn0mhTBzCP8IWHoUdBGugMDN+Q70K/oywbcFqDOyRG7l89MSH23uBf709THv+7LeErB8JGpbADVeT6fWtxfYQUDd913X1bnvlEy8vRss666rynpTAJPNufHuWj0CnAdnDW0Hzr7d4B4CxgccbnMnPQLceoDzvQsjIPKejKYQ7xHgmS+e6v9eAhZKY5TmerbD80nxdEVofBgi/SejPQJeqAj9nADVDcazfo+a4CjArfOpdu4VINtvCyjrXISuAMoXPTWx56bAP86fdeqsJ+hHpyerwj8m4FYQ6Z3nAunWEFgSEMiL+TyIVkXBfAKcRm9d8EcFUAxU519cASz0PxjYFkA72pMdyA+RXwBtTn1LZnv99zMCSvXAVz8IdacAzVl3CFTPCXAyGUqkvQLUs+HL2V0xDvunwt43DHRDOu6/PAJC6wy5WxdfFuDJ5QO/gHHjY+q6XOUPbIacEnFedcMx4dM+3xVABqJ0KAsjFcqfEWBHt3EJXBAwXmzcg8bLLgKKNep+6I7q2M94Bz4/IXI7IBEGcaqOlqoESB0R6YYknZ+vGQW087Mc50mAbI0DjeIf3ahL+49zH/cTIofrdUp/VHMrdbHUOiEyCWheOCg5rJFnaRI/Dn7xbOg9Z4SC6b1UpKDr1LuppGcEmKd5hH7obx7y0ZV7JcDkJkCfERkPybR0B/Wgwz0jNApoPc2LpIskiRSx8cZBlqTJ/VWlZhQTMvVuujynXUCu308n7LJ4dLCIx19VztsEG39961L5OCUmDqdGd+kk9Q3su05DJbaao3dO03P+zHlgPh4THA8KRlzaT4b2OfFPHYnl7afs9iYCvo753oul19Qx2el2UWQlR2MSHRncvpVH3Gk02iIezX4Mj8LbkUk+fu29q9XOgw8RTudRo8R9w9FuP+SZN8G8RrwHlA/cPpW0ILpZdPxN1gVkO0ALv7h9mg/WkQklIEqP2bc4bixB/ft0A0W+4fZFUdplRlVJGbr+SwzHdQHl++TURUkd11RuJUXQprkoyu9ACdu6gPp91DlKubQnLPqMM+sp8iep+i8LKGkJ2C4afERA+A0B+pjxZs3gEwL0Ucfw4wIKWh/c4vkXBDDK0OPPjwCVBTHxve7fBdC+Q1KyHoefFaBKSfybK8BNAFNblTSRyUdHQFkMRxEGSV98fQTwQMaJlIneR31EQEWBv+/ThcOk3xGQpkJIR0D1PmMiVN6+LAtVSOuHXp0xDuSxy8svMiZCJEDQBJDSXQe796nVCOjr25f6jaXHLKUfxrnMv5cET3m6XgRDmgGMHPzYZkjedzu6XDSqjgKZ/gLGJEgXbJ77Hx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPCL+A+QHzLjmJYFggAAAABJRU5ErkJggg==">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700;1,800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -112,6 +114,7 @@ body.measure .wrap{display:block!important;position:absolute;left:-9999px}
    <div class="card">
     <h2>1 · Datos</h2>
     <label class="file" id="lx"><b>Excel de productos (.xlsx / .xls / .csv)</b><span id="tx">Pulsa para seleccionar</span><input type="file" id="fx" accept=".xlsx,.xls,.csv"></label>
+    <button class="sec" id="btnTpl">Descargar plantilla Excel vacía</button>
    </div>
    <div class="card">
     <h2>2 · Imágenes y logos</h2>
@@ -427,6 +430,41 @@ async function makePdf(all){
 }
 $('dOne').onclick=()=>makePdf(false);
 $('dAll').onclick=()=>makePdf(true);
+async function saveBlob(blob,name){
+ let dl=null;
+ try{dl=window.claude&&claude.use?await claude.use('downloads'):null}catch(e){dl=null}
+ if(dl){await dl.save({filename:name,data:blob})}
+ else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000)}
+}
+$('btnTpl').onclick=async()=>{
+ try{
+  const H=['Nombre Imagen','Nombre Logo','Codigo LN','Tipología de Producto','Modelo','Marca','Picto Ventaja','Incluye','Añade y mejora tu compra',...[1,2,3,4,5].flatMap(n=>['Nombre Caracteristica '+n,'Característica '+n])];
+  const ws=XLSX.utils.aoa_to_sheet([H]);
+  ws['!cols']=H.map(h=>({wch:Math.max(18,h.length+2)}));
+  const info=XLSX.utils.aoa_to_sheet([
+   ['Columna','Qué poner'],
+   ['Nombre Imagen','Opcional. Si va vacía, la imagen se busca en la carpeta por los 8 primeros caracteres del nombre del archivo, que deben coincidir con el Codigo LN (completado con ceros hasta 8 dígitos).'],
+   ['Nombre Logo','Nombre del archivo del logo de la marca (por ejemplo Stayer.png). Si va vacío se usa Marca + .png.'],
+   ['Codigo LN','Código del producto. En la ficha aparece como «Ref.» con 8 dígitos.'],
+   ['Tipología de Producto','Texto de la cabecera de la ficha. Una fila sin Codigo LN ni Modelo sirve de plantilla de esa tipología: aporta los nombres de característica que falten en los productos de la misma tipología.'],
+   ['Modelo','Modelo del producto, bajo la tipología.'],
+   ['Marca','Se usa para buscar el logo y se muestra como texto si no se encuentra.'],
+   ['Picto Ventaja','Nombre del archivo del picto (por ejemplo ventaja1.png), en la misma carpeta de imágenes.'],
+   ['Incluye','Un elemento por línea: sepáralos con Alt+Enter dentro de la celda, con «;» o con «|».'],
+   ['Añade y mejora tu compra','Texto libre.'],
+   ['Nombre Caracteristica 1 a 5 / Característica 1 a 5','Nombre y valor de cada una de las 5 características de la tabla.'],
+   ['','El programa lee solo la primera hoja. Esta hoja de instrucciones puede borrarse.']
+  ]);
+  info['!cols']=[{wch:44},{wch:110}];
+  const wb=XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb,ws,'Matriz por Tipología');
+  XLSX.utils.book_append_sheet(wb,info,'Instrucciones');
+  const out=XLSX.write(wb,{bookType:'xlsx',type:'array'});
+  await saveBlob(new Blob([out],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),'plantilla_fichas.xlsx');
+ }catch(err){
+  if(!(err&&err.code==='declined'))$('status').innerHTML='<span class="warn">No se pudo generar la plantilla'+(err&&err.message?': '+esc(err.message):'')+'</span>';
+ }
+};
 
 window.addEventListener('afterprint',()=>{document.body.dataset.print='one'});
 </script>
