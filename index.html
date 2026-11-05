@@ -29,6 +29,11 @@ h1{font-size:22px;margin:0 0 4px;font-weight:800;font-style:italic;text-transfor
 @media(max-width:860px){.grid{grid-template-columns:1fr}}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;margin-bottom:12px;overflow:hidden}
 .card h2{display:inline-block;font-size:11px;font-weight:700;margin:-14px 0 12px -14px;padding:6px 12px;text-transform:uppercase;letter-spacing:.07em;color:#fff;background:#004188;border-radius:0 0 6px 0}
+.stack button{display:block;width:100%;margin-bottom:8px}
+.fileinfo{font-size:12px;color:var(--muted);margin:-2px 0 8px;word-break:break-word}
+.fileinfo:not(.ok){display:none}
+.fileinfo.ok{color:var(--text);font-weight:600}
+.fileinfo.ok::before{content:"✔ ";color:var(--blue)}
 label.file{display:block;border:1.5px dashed var(--line);border-radius:6px;padding:10px;cursor:pointer;margin-bottom:8px}
 label.file b{display:block;font-size:13px}
 label.file span{color:var(--muted);font-size:12px}
@@ -120,12 +125,20 @@ body.measure .wrap{display:block!important;position:absolute;left:-9999px}
   <aside>
    <div class="card">
     <h2>1 · Datos</h2>
-    <label class="file" id="lx"><b>Excel de productos (.xlsx / .xls / .csv)</b><span id="tx">Pulsa para seleccionar</span><input type="file" id="fx" accept=".xlsx,.xls,.csv"></label>
-    <button class="sec" id="btnTpl">Descargar plantilla Excel vacía</button>
+    <input type="file" id="fx" accept=".xlsx,.xls,.csv" hidden>
+    <div class="stack">
+     <button class="sec" id="btnImp">Importar BBDD Excel</button>
+     <div class="fileinfo" id="lx"><span id="tx"></span></div>
+     <button class="sec" id="btnTpl">Descargar plantilla Excel vacía</button>
+    </div>
    </div>
    <div class="card">
     <h2>2 · Imágenes y logos</h2>
-    <label class="file" id="li"><b>Carpeta de imágenes y logos</b><span id="ti">Pulsa para elegir la carpeta</span><input type="file" id="fi" webkitdirectory directory multiple></label>
+    <input type="file" id="fi" webkitdirectory directory multiple hidden>
+    <div class="stack">
+     <button class="sec" id="btnImg">Importar carpeta imágenes y logos</button>
+     <div class="fileinfo" id="li"><span id="ti"></span></div>
+    </div>
     <div class="prog" id="prog" hidden><div class="bar"><i id="bari"></i></div><div class="t" id="progt"></div></div>
    </div>
    <div class="card">
@@ -488,6 +501,8 @@ async function makePdf(all){
 }
 $('dOne').onclick=()=>makePdf(false);
 $('dAll').onclick=()=>makePdf(true);
+$('btnImp').onclick=()=>$('fx').click();
+$('btnImg').onclick=()=>$('fi').click();
 const rotate=d=>{if(!rows.length)return;const r=rows[cur];r._rot=((r._rot||0)+d+360)%360;isolate()};
 $('rotL').onclick=()=>rotate(-90);
 $('rotR').onclick=()=>rotate(90);
